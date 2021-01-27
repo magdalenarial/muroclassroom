@@ -1,0 +1,19 @@
+header {
+    background: green;
+    color: #fff;
+}
+
+aside {
+    background: orange;
+    color: #fff;
+}
+
+.uno {
+    background: red;
+    color: #fff;
+}
+
+.main {
+    background: royalblue;
+    color: #fff;
+}
