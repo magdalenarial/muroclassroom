@@ -28,7 +28,7 @@
                 <a class="nav-link nav-link-active" href="./personas.html">Personas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Calificaciones</a>
+                <a class="nav-link" href="./calificaciones.html">Calificaciones</a>
             </li>
         </ul>
     </nav>
@@ -83,12 +83,12 @@
                     <p class="my-0 pe-3">1 alumno</p>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary ms-auto btn-light btn-lg btn-floating"
-                        data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                        data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
                         <i class="fas fa-user-plus"></i>
                     </button>
 
                     <!------------ Modal para invitar nuevos estudiantes------->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -104,8 +104,8 @@
                                   </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary">Invitar</button>
+                                <button type="button" class="btn btn-secondary btn-light" data-mdb-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary btn-light">Invitar</button>
                             </div>
                         </div>
                     </div>
@@ -160,22 +160,27 @@
             <img src="./images/lime-491.png" alt="" class="imageSVG">
             <p>Invitar a alumnos a tu clase</p>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal2"
                 id="btnGroupDrop1">
                 Invitar
             </button>
 
             <!------------ Modal para invitar nuevos estudiantes------->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Invitar a alumnos</h5>
                             <button type="button" class="btn-close" data-mdb-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">...</div>
+                        <div class="modal-body">
+                            <div class="form-outline">
+                                <input type="email" id="typeEmail" class="form-control" />
+                                <label class="form-label" for="typeEmail">Escribe un nombre o un correo</label>
+                            </div>
+                        </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
                                 Close
@@ -190,8 +195,7 @@
 
 
 
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
 </body>
 
 </html>
