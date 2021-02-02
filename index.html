@@ -2,52 +2,300 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>Muro</title>
 </head>
 
 <body>
-    <nav>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Tablón</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Trabajo de Clase</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Personas</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
-        <header class="col-md-12">
-                <h1>Header</h1>
-        </header>
-        <section class="main row">
-            <article class="col-md-2">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                        software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-            </article>
-            <aside class="col-md-10">
-                <div class="uno">HOLA SOY UN DIV</div>
+  <!-------------Acá comienza el nav/tab -------------------->
+  <nav class="nav__menu sticky-top" id="nav-menu">
+    <ul class="nav justify-content-center shadow-5">
+      <li class="nav-item">
+        <a class="nav-link nav-link-active" aria-current="page" href="./index.html">Tablón</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./trabajoprofesores.html">Trabajo de Clase</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./personas.html">Personas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Calificaciones</a>
+      </li>
+    </ul>
+  </nav>
+  <!-----------------------Acá comienza el Header con su respectiva imagen ------------------->
+  <div class="container">
+    <header class="col-md-12">
+      <div class="card bg-dark text-white">
+        <img src="https://gstatic.com/classroom/themes/img_bookclub.jpg" class="card-img" alt="..." />
+        <div class="card-img-overlay">
+          <h5 class="card-title">Magdalena Rial</h5>
+          <p class="card-text">
+            Nombre de la clase.
+          </p>
+        </div>
+      </div>
+    </header>
 
-                <div class="uno">HOLA SOY UN DIV 2</div>
+    <!-----------------------Acá comienza el main con las dos columnas importantes ------------------->
+    <!--Este es el card de Fecha de entrega------>
+    <section class="main row">
+      <article class="col-md-2">
+        <div class="card border mb-3" style="max-width: 18rem;">
+          <div class="card-header">Fecha de entrega Proxima</div>
+          <div class="card-body text-dark">
+            <p class="card-text">Yuhu! No tenes que entregar ninguna tarea esta semana!</p>
+          </div>
+          <a href="#" class="card-link text-end">Ver todo</a>
+        </div>
+      </article>
 
-                <div class="uno">HOLA SOY UN DIV 3</div>
-            </aside>
-        </section>
-    </div>
+      <!--El primer card para anunciar y publicar cosas, se pueden añadir archivos------>
+      <aside class="col-md-10">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-outline" style="margin-bottom: 1rem;">
+              <textarea class="form-control" id="textArea" rows="4"></textarea>
+              <!------- Este es el unico que tuve que ponerle color acá------->
+              <label class="form-label" style="color: green;" for="textAreaExample">Anuncia algo a tu clase:</label>
+            </div> 
+            <!--Este es el botón de agregar archivos------>
+           <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file btn btn-light">
+             <i class="fas fa-paperclip"></i>Agregar<input type="file" id="file">
+          </label>
+            <!--Los botones de publicar y cancelar, el de publicar tiene un tooggle con más opciones------>
+            <button type="button" class="btn btn-link float-end" data-mdb-ripple-color="dark">Cancelar</button>
+            <div class="btn-group float-end">
+              <button type="button" class="btn btn-light">Publicar</button>
+              <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Publicar</a></li>
+                <li><a class="dropdown-item" href="#">Programar</a></li>
+                <li><a class="dropdown-item" href="#">Guardar Borrador</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Este es el card para comentar con un modal que se abre------>
+        <div class="card border card-body">
+          <div class="card-body text-dark d-flex">
+            <button type="button" class="btn btn-primary btn-floating btn-light">
+              <i class="far fa-file-alt" id="iconHomework"></i>
+            </button>
+            <div class="userWithDate d-flex flex-column">
+              <h6>Magdalena Rial ha publicado una nueva tarea: Primer Tema</h6>
+              <p>28/01</p>
+            </div>
+            <div class="ms-auto">
+              <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Editar</a></li>
+                <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-footer">
+            <!------------- Button trigger modal ---------->
+            <button type="button" class="btn btn-primary btn-light" data-mdb-toggle="modal"
+              data-mdb-target="#exampleModal">
+              1 comentario de la clase
+            </button>
+            <!--------------- Modal que se abre acá ------------>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true" >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Comentarios de la clase</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body clearfix d-flex">
+                    <img
+                      src="https://i.imgur.com/ladIWFJ.png"
+                      alt="" class="profile-mini float-start">
+                      <div class="userWithDate d-flex row">
+                        <h6 class="float-start">Magdalena Rial</h6>
+                        <p>28/01</p>
+                      </div>
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split float-end"
+                      data-mdb-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Editar</a></li>
+                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="card-text text-modal">Hola soy un texto!</p>
+                  <div class="modal-footer">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <img
+                        src="https://i.imgur.com/ladIWFJ.png"
+                        alt="" class="profile-mini">
+                      <div class="form-outline col-sm-9">
+                        <input type="text" id="form6Example4" class="form-control" />
+                      </div>
+                      <button type="button" class="btn btn-primary btn-floating btn-light">
+                        <i class="far fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------Este es la otra forma de comentar con un acordeón---------------->
+        <div class="card border card-body">
+            <div class="card-body text-dark d-flex pb-0">
+              <img
+                src="https://i.imgur.com/ladIWFJ.png"
+                alt="" class="profile-mini">
+              <div class="userWithDate d-flex flex-column">
+                <h6>Magdalena Rial</h6>
+                <p>28/01</p>
+              </div>
+              <div class="ms-auto">
+                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                  <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="card-text">
+              Aca se imprime el comentario que desees
+            </p>
+          <div class="card-header">
+            <a class="btn btn-primary btn-light" data-mdb-toggle="collapse" href="#collapseExample" role="button"
+              aria-expanded="false" aria-controls="collapseExample">3 comentarios de clase</a>
+          </div>
+
+          <!-- Acá es donde se van a ver los comentarios del acordeón  -->
+          <div class="collapse mt-3" id="collapseExample" style="max-width: 900px">
+            <!--EJEMPLO DE UN COMENTARIO  -->
+            <div class="card-header text-dark">
+              <div class="card-body text-dark d-flex pb-0">
+                <img
+                  src="https://i.imgur.com/ladIWFJ.png"
+                  alt="" class="profile-mini">
+                  <div class="userWithDateComent  d-flex flex-column">
+                    <h6>Magdalena Rial</h6>
+                    <p>28/01</p>
+                  </div>
+           <div class="ms-auto">
+            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split float-end"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Editar</a></li>
+            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+            <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
+          </ul>
+           </div>
+              </div>
+              <p class="card-text">
+                Aca se imprime el comentario que desees
+              </p>
+            </div>
+
+            <!------- EMPLO DE COMENTARIO 2 ------->
+            <div class="card-header text-dark">
+              <div class="card-body text-dark d-flex pb-0">
+                <img
+                  src="https://i.imgur.com/ladIWFJ.png"
+                  alt="" class="profile-mini">
+                  <div class="userWithDateComent d-flex flex-column">
+                    <h6>Magdalena Rial</h6>
+                    <p>28/01</p>
+                  </div>
+              <div class="ms-auto">
+                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Editar</a></li>
+                <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
+              </ul>
+              </div>
+              </div>
+              <p class="card-text">
+                Aca se imprime el comentario que desees
+              </p>
+            </div>
+
+            <!------- EMPLO DE COMENTARIO 3  ------->
+            <div class="card-header text-dark">
+              <div class="card-body text-dark d-flex pb-0">
+                <img
+                  src="https://i.imgur.com/ladIWFJ.png"
+                  alt="" class="profile-mini">
+                  <div class="userWithDateComent d-flex flex-column">
+                    <h6>Magdalena Rial</h6>
+                    <p>28/01</p>
+                  </div>
+                <div class="ms-auto">
+                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split float-end"
+                      data-mdb-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Editar</a></li>
+                      <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                    </ul>
+                </div>
+              </div>
+              <p class="card-text">
+                Aca se imprime el comentario que desees
+              </p>
+            </div>
+          </div>
+
+
+          <!------------- Este es el input donde se puede escribir comentarios ---------->
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <img
+              src="https://i.imgur.com/ladIWFJ.png"
+              alt="" class="profile-mini">
+            <div class="form-outline col-sm-10">
+              <input type="text" id="form6Example4" class="form-control" />
+            </div>
+            <button type="button" class="btn btn-primary btn-floating btn-light">
+              <i class="far fa-paper-plane col-sm-1"></i>
+            </button>
+          </div>
+        </div>
+
+      </aside>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
 </body>
 </html>
