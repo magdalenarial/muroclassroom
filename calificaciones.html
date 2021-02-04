@@ -1,216 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css" />
-    <title>Calificaciones</title>
-  </head>
-  <body>
-    <!-------------Acá comienza el nav/tab -------------------->
-    <nav class="nav__menu sticky-top" id="nav-menu">
-      <ul class="nav justify-content-center shadow-5">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./index.html">Tablón</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./trabajoprofesores.html">Trabajo de Clase</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./personas.html">Personas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-active" href="./calificaciones.html"
-            >Calificaciones</a>
-        </li>
-      </ul>
-    </nav>
 
-    <!-------------Acá comienza la tabla -------------------->
-    <div class="table-responsive">
-        <table class="table table-bordered">
-              <!-------------Acá se encuentra el header con los nombres de los trabajos-------------------->
-            <tr>
-                <th scope="col" class="columnFixed align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-light">Ordenar</button>
-                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                          data-mdb-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Ordenar por nombre</a></li>
-                          <li><a class="dropdown-item" href="#">Ordenar por apellido</a></li>
-                        </ul>
-                      </div>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Primer Tema</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Segundo Tema</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Integracion</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Actividad 05</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Activiad 06</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Actividad 07</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">T.P N3</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Evaluacion</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Actividad 08</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Actividad 09</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-                <th scope="col">
-                    <p class="deliveryDate">18 feb. de 2021</p>
-                    <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
-                        <a class="link-table" href="#">Actividad 10</a>
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <p class="deliveryDate">de 100</p>
-                </th>
-              </tr>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calificaciones</title>
+</head>
 
-                <!-------------Acá comienza la parte vertical con los alumnos -------------------->
-              <tbody>
-                <tr>
-                  <th scope="row" class="columnFixed">
-                    <a><i class="fas fa-user-friends me-2 btn-color"></i>Promedio de la clase</a>
-                  </th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr>
-                <!-------------Primer fila de alumno-------------------->
-                <tr>
-                  <th scope="row" class="columnFixed"> 
-                    <div class="card-body text-dark d-flex align-items-center">
-                        <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
-                        <div class="userWithDateComent d-flex flex-column">
-                            <h6 class="my-0 pe-3">Magdalena Rial</h6>
-                        </div>
-                    </div>
-                  </th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                  <td>Thornton</td>
-                </tr>
-                <!-------------Segunda fila de aLumno-------------------->
-                <tr>
-                  <th scope="row" class="columnFixed">
-                    <div class="card-body text-dark d-flex align-items-center">
-                        <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
-                        <div class="userWithDateComent d-flex flex-column">
-                            <h6 class="my-0 pe-3">Matias Mazrimas</h6>
-                        </div>
-                    </div>
-                  </th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-        </table>
-      </div>
- 
- 
- 
- 
- 
- 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+<body>
+  <!-------------Acá comienza el nav/tab -------------------->
+  <nav class="nav__menu sticky-top" id="nav-menu">
+    <ul class="nav justify-content-center shadow-5">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="./index.html">Tablón</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./trabajoprofesores.html">Trabajo de Clase</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./personas.html">Personas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-active" href="./calificaciones.html">Calificaciones</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-------------Acá comienza la tabla -------------------->
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <!-------------Acá se encuentra el header con los nombres de los trabajos-------------------->
+      <tr>
+        <th scope="col" class="columnFixed align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-light">Ordenar</button>
+            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-mdb-toggle="dropdown"
+              aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ordenar por nombre</a></li>
+              <li><a class="dropdown-item" href="#">Ordenar por apellido</a></li>
+            </ul>
+          </div>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <!----IMPORTANTE YO PUSE EL LINK A UNA #HREF PERO CAMBIA DE ACUERDO AL LINK DE LA TAREA QUE SE CREE------->
+            <!-------------COLOQUÉ EN LOS PRIMEROS 6 PARA QUE SE ENTIENDAN------------------------------------->
+            <a class="link-table" href="./resumentarea.html">Primer Tema</a>
+            <!----------------------Este botón es para editar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Acá termina el botón-------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <!----IMPORTANTE YO PUSE EL LINK A UNA #HREF PERO CAMBIA DE ACUERDO AL LINK DE LA TAREA QUE SE CREE------->
+            <a class="link-table" href="./resumentarea.html">Segundo Tema</a>
+            <!----------------------Este botón es para editar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Acá termina el botón-------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <!----IMPORTANTE YO PUSE EL LINK A UNA #HREF PERO CAMBIA DE ACUERDO AL LINK DE LA TAREA QUE SE CREE------->
+            <a class="link-table" href="./resumentarea.html">Integracion</a>
+            <!----------------------Este botón es para editar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Acá termina el botón-------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <!----IMPORTANTE YO PUSE EL LINK A UNA #HREF PERO CAMBIA DE ACUERDO AL LINK DE LA TAREA QUE SE CREE------->
+            <a class="link-table" href="./resumentarea.html">Actividad 05</a>
+            <!----------------------Este botón es para editar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Acá termina el botón-------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <!----IMPORTANTE YO PUSE EL LINK A UNA #HREF PERO CAMBIA DE ACUERDO AL LINK DE LA TAREA QUE SE CREE------->
+            <a class="link-table" href="./resumentarea.html">Activiad 06</a>
+            <!----------------------Este botón es para editar/eliminar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Termina el botón------------------------------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <a class="link-table" href="#">Actividad 07</a>
+            <!----------------------Este botón es para editar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Acá termina el botón-------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <a class="link-table" href="#">Trabajo Práctico N°3</a>
+            <!----------------------Este botón es para editar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Termina el botón-------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <a class="link-table" href="#">Evaluacion</a>
+            <!----------------------Este botón es para editar/eliminar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Termina el botón------------------------------------------------------->
+            </div>
+            <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <a class="link-table" href="#">Actividad 08</a>
+           <!----------------------Este botón es para editar/eliminar las tareas-------------------------------->
+           <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+           data-mdb-toggle="dropdown" aria-expanded="false">
+           <i class="material-icons">more_vert</i>
+         </button>
+         <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#">Editar</a></li>
+           <li><a class="dropdown-item" href="#">Eliminar</a></li>
+           <div class="card-footer">
+             <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+           </div>
+         </ul>
+         <!----------------------Termina el botón------------------------------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <a class="link-table" href="#">Actividad 09</a>
+            <!----------------------Este botón es para editar/eliminar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Termina el botón------------------------------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+        <th scope="col">
+          <p class="deliveryDate">18 feb. de 2021</p>
+          <div class="textContent border-bottom d-flex flex-row justify-content-between justify-content-between">
+            <a class="link-table" href="#">Actividad 10</a>
+            <!----------------------Este botón es para editar/eliminar las tareas-------------------------------->
+            <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+              <div class="card-footer">
+                <li><a class="dropdown-item" href="#">Devolver todas</a></li>
+              </div>
+            </ul>
+            <!----------------------Termina el botón------------------------------------------------------->
+          </div>
+          <p class="deliveryDate">de 100</p>
+        </th>
+      </tr>
+
+      <!-------------Acá comienza la parte vertical con los alumnos -------------------->
+      <tbody>
+        <tr>
+          <th scope="row" class="columnFixed">
+            <a><i class="fas fa-user-friends me-2 btn-color"></i>Promedio de la clase</a>
+          </th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr>
+        <!-------------Primer fila de alumno-------------------->
+        <tr>
+          <th scope="row" class="columnFixed">
+            <div class="card-body text-dark d-flex align-items-center">
+              <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+              <div class="userWithDateComent d-flex flex-column">
+                <h6 class="my-0 pe-3">Magdalena Rial</h6>
+              </div>
+            </div>
+          </th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+        </tr>
+        <!-------------Segunda fila de aLumno-------------------->
+        <tr>
+          <th scope="row" class="columnFixed">
+            <div class="card-body text-dark d-flex align-items-center">
+              <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+              <div class="userWithDateComent d-flex flex-column">
+                <h6 class="my-0 pe-3">Matias Mazrimas</h6>
+              </div>
+            </div>
+          </th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+
+        <tr>
+          <th scope="row" class="columnFixed">
+            <div class="card-body text-dark d-flex align-items-center">
+              <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+              <div class="userWithDateComent d-flex flex-column">
+                <h6 class="my-0 pe-3">Camila Romero</h6>
+              </div>
+            </div>
+          </th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+
+
+        <tr>
+          <th scope="row" class="columnFixed">
+            <div class="card-body text-dark d-flex align-items-center">
+              <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+              <div class="userWithDateComent d-flex flex-column">
+                <h6 class="my-0 pe-3">Tomás Julián Mattia</h6>
+              </div>
+            </div>
+          </th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
 </body>
+
 </html>

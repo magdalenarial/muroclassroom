@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+   <!-- Material icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
@@ -93,16 +95,16 @@
         <div class="card border card-body">
           <div class="card-body text-dark d-flex">
             <button type="button" class="btn btn-primary btn-floating btn-light">
-              <i class="far fa-file-alt" id="iconHomework"></i>
+              <i class="far fa-file-alt iconHomework"></i>
             </button>
             <div class="userWithDate d-flex flex-column">
               <h6>Magdalena Rial ha publicado una nueva tarea: Primer Tema</h6>
               <p>28/01</p>
             </div>
             <div class="ms-auto">
-              <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+              <button type="button" class="btn btn-light btn-floating  shadow-none"
               data-mdb-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle Dropdown</span>
+              <i class="material-icons">more_vert</i>
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Editar</a></li>
@@ -112,7 +114,7 @@
           </div>
           <div class="card-footer">
             <!------------- Button trigger modal ---------->
-            <button type="button" class="btn btn-primary btn-light" data-mdb-toggle="modal"
+            <button type="button" class="btn btn-primary btn-light shadow-none" data-mdb-toggle="modal"
               data-mdb-target="#exampleModal">
               1 comentario de la clase
             </button>
@@ -134,13 +136,14 @@
                         <p>28/01</p>
                       </div>
                     <div class="ms-auto">
-                      <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split float-end"
+                      <button type="button" class="btn btn-light dropdown-toggle-split btn-floating  shadow-none float-end"
                       data-mdb-toggle="dropdown" aria-expanded="false">
-                      <span class="visually-hidden">Toggle Dropdown</span>
+                      <i class="material-icons">more_vert</i>
                       </button>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Editar</a></li>
                         <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                        <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
                       </ul>
                     </div>
                   </div>
@@ -153,8 +156,8 @@
                       <div class="form-outline col-sm-9">
                         <input type="text" id="form6Example4" class="form-control" />
                       </div>
-                      <button type="button" class="btn btn-primary btn-floating btn-light">
-                        <i class="far fa-paper-plane"></i>
+                      <button type="button" class="btn btn-primary shadow-none btn-floating btn-light">
+                        <i class="material-icons">send</i>
                       </button>
                     </div>
                   </div>
@@ -175,8 +178,9 @@
                 <p>28/01</p>
               </div>
               <div class="ms-auto">
-                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                <button type="button" class="btn btn-light dropdown-toggle-split btn-floating  shadow-none float-end"
                 data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons">more_vert</i>
                 <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -190,7 +194,7 @@
               Aca se imprime el comentario que desees
             </p>
           <div class="card-header">
-            <a class="btn btn-primary btn-light" data-mdb-toggle="collapse" href="#collapseExample" role="button"
+            <a class="btn btn-primary btn-light shadow-none" data-mdb-toggle="collapse" href="#collapseExample" role="button"
               aria-expanded="false" aria-controls="collapseExample">3 comentarios de clase</a>
           </div>
 
@@ -207,8 +211,9 @@
                     <p>28/01</p>
                   </div>
            <div class="ms-auto">
-            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split float-end"
+            <button type="button" class="btn btn-light dropdown-toggle-split btn-floating  shadow-none float-end"
             data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="material-icons">more_vert</i>
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
@@ -234,8 +239,9 @@
                     <p>28/01</p>
                   </div>
               <div class="ms-auto">
-                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                <button type="button" class="btn btn-light dropdown-toggle-split btn-floating  shadow-none float-end"
                 data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons">more_vert</i>
                 <span class="visually-hidden">Toggle Dropdown</span>
               </button>
               <ul class="dropdown-menu">
@@ -261,13 +267,15 @@
                     <p>28/01</p>
                   </div>
                 <div class="ms-auto">
-                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split float-end"
-                      data-mdb-toggle="dropdown" aria-expanded="false">
+                  <button type="button" class="btn btn-light dropdown-toggle-split btn-floating  shadow-none float-end"
+                  data-mdb-toggle="dropdown" aria-expanded="false">
+                  <i class="material-icons">more_vert</i>
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Editar</a></li>
                       <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                      <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
                     </ul>
                 </div>
               </div>
@@ -286,8 +294,8 @@
             <div class="form-outline col-sm-10">
               <input type="text" id="form6Example4" class="form-control" />
             </div>
-            <button type="button" class="btn btn-primary btn-floating btn-light">
-              <i class="far fa-paper-plane col-sm-1"></i>
+            <button type="button" class="btn btn-primary shadow-none btn-floating btn-light">
+              <i class="material-icons">send</i>
             </button>
           </div>
         </div>

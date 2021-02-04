@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
+    <!--- CSS STYLE------>
+    <link rel="stylesheet" href="style.css" />
+    <title>Instrucciones</title>
+</head>
+
+<body>
+    <!-------------Acá comienza el nav/tab -------------------->
+    <nav class="nav__menu sticky-top" id="nav-menu">
+        <ul class="nav justify-content-center shadow-5">
+            <li class="nav-item">
+                <a class="nav-link nav-link-active" href="./Instrucciones.html">Instrucciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./resumentarea.html">Trabajo de los alumnos</a>
+            </li>
+        </ul>
+    </nav>
+    <!-------------Acá termina el nav/tab -------------------->
+
+
+    <!-------------Lado izquierdo de la pantalla con las tareas y demás del alumno-------------------->
+    <div class="container">
+        <section class="main row">
+            <article class="col-md-8">
+                <div class="card-body text-dark d-flex" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button type="button" class="btn btn-primary btn-floating btn-light">
+                        <i class="far fa-file-alt iconHomework"></i>
+                    </button>
+                    <div class="userWithDate d-flex flex-column">
+                        <h3 class="align-items-center">Primer Tema</h3>
+                        <p class="deliveryDate">MagdalenaRial • 6 de febrero(Última actualización)</p>
+                        <div class="footerText text-dark d-flex justify-content-between">
+                            <p>100 puntos</p>
+                            <p>Fecha de entrega: 18 feb 23:59</p>
+                        </div>
+                    </div>
+                    <div class="ms-auto">
+                        <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                            <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header">
+                    <!--Botón con el modal enorme, evaluación-->
+                    <button type="button" class="btn btn-primary btn-light btn-rounded" data-mdb-toggle="modal"
+                        data-mdb-target="#exampleModal">
+                        <h6 class="evaluationTitle"><i class="fas fa-folder-open"></i> Guía de evaluación: 1 criterio •
+                            1 pto.
+                        </h6>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+                        <div class="modal-dialog modal-fullscreen ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Guía de evaluación</h5>
+                                    <button type="button" class="btn-close" data-mdb-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-----------------Titulo en el modal------------->
+                                    <div class="card-body d-flex flex-row">
+                                        <h3>Tema 1</h2>
+                                            <div class="ms-auto">
+                                                <button type="button"
+                                                    class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+                                                    data-mdb-toggle="dropdown" aria-expanded="false">
+                                                    <i class="material-icons">more_vert</i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Editar</a></li>
+                                                    <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                                    <li><a class="dropdown-item" href="#">Exportar a hojas de
+                                                            cálculo</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+
+                                    <!-----------------El body del modal------------->
+                                    <div class="card border shadow-0 ">
+                                        <div class="card-body">
+                                            <h6 class="card-title card-title-modal">Criterio de calificaciones</h6>
+                                            <p class="card-text">
+                                                Acá van detalles del criterio con el que se calificará
+                                            </p>
+                                            <div class="card border shadow-0 d-flex flex-column">
+                                                <p class="ms-auto point pe-6">1 punto</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------- Acá es el footer con los comentarios------------------------->
+                <div class="card-footer">
+                    <div class="card-header">
+                        <a class="btn btn-primary btn-light shadow-none" data-mdb-toggle="collapse"
+                            href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">1 comentario de clase</a>
+                    </div>
+
+                    <!-- Acá es donde se van a ver los comentarios del acordeón  -->
+                    <div class="collapse mt-3" id="collapseExample" style="max-width: 900px">
+                        <!--EJEMPLO DE UN COMENTARIO  -->
+                        <div class="card-header text-dark">
+                            <div class="card-body text-dark d-flex pb-0">
+                                <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+                                <div class="userWithDateComent  d-flex flex-column">
+                                    <h6>Magdalena Rial</h6>
+                                    <p>28/01</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <button type="button"
+                                        class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
+                                        data-mdb-toggle="dropdown" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Editar</a></li>
+                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="#">Copiar vinculo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                Y..... qué hago acá?
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!------------- Este es el input donde se puede escribir comentarios ---------->
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+                        <div class="form-outline col-sm-10">
+                            <input type="text" id="form6Example4" class="form-control" />
+                        </div>
+                        <button type="button" class="btn btn-primary btn-floating shadow-none btn-light">
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+
+            <!-------------Lado derecho de la pantalla con las dos cards -------------------->
+            <aside class="col-md-4">
+                <div class="card text-center border">
+                    <div class="card-header d-flex flex-row justify-content-between">
+                        <h4>Tu trabajo</h4>
+                        <p class="text-danger">Sin entregar</p>
+                    </div>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary btn-sm btn-light shadow-none border">
+                            <i class="fas fa-plus"></i>
+                            Añadir o crear
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" id="btnGroupDrop1" class="btn btn-primary shadow-none">
+                            Marcar como tarea completada
+                        </button>
+                    </div>
+                </div>
+
+                <!-------------Acá comienza el segundo card con los comentarios privados -------------------->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h6>1 comentario privado</h6>
+                    </div>
+                    <div class="card-body clearfix d-flex flex-row justify-content-between align-items-center">
+                        <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini">
+                        <h6>Magdalena Rial</h6>
+                        <p>28/01</p>
+                    </div>
+                    <div class="card-text d-flex flex-row">
+                        <p class="card-text">Hola soy un texto!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini me-2">
+                            <div class="form-outline col-sm-9 me-2">
+                                <input type="text" id="form6Example4" class="form-control" />
+                            </div>
+                            <button type="button" class="btn btn-primary shadow-none btn-floating btn-light">
+                                <i class="material-icons me-2">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+</body>
+
+</html>

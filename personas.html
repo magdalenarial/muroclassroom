@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
@@ -35,38 +37,39 @@
     <!------------ Acá está la parte profesores------->
     <div class="container">
         <div class="card-body border-success border-bottom d-flex flex-row">
-            <h3>Profesores</h2>
+            <h3>Profesores</h3>
 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary ms-auto btn-light btn-lg btn-floating"
-                    data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-                    <i class="fas fa-user-plus"></i>
-                </button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary ms-auto btn-light btn-floating shadow-none"
+                data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                <i class="material-icons">person_add</i>
+            </button>
 
-                <!------------ Modal para invitar nuevos profesores------->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Invitar a profesores</h5>
-                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
+            <!------------ Modal para invitar nuevos profesores------->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Invitar a profesores</h5>
+                            <button type="button" class="btn-close" data-mdb-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-outline">
+                                <input type="email" id="typeEmail" class="form-control" />
+                                <label class="form-label" for="typeEmail">Escribe un nombre o un correo</label>
                             </div>
-                            <div class="modal-body">
-                                <div class="form-outline">
-                                    <input type="email" id="typeEmail" class="form-control"/>
-                                    <label class="form-label" for="typeEmail">Escribe un nombre o un correo</label>
-                                  </div>
-                            </div>
-                            <div class="modal-footer">
-                                <p>Los profesores que añadas podrán hacer lo mismo que tú, salvo eliminar la clase.</p>
-                                <button type="button" class="btn btn-secondary btn-light" data-mdb-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary btn-light">Invitar</button>
-                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Los profesores que añadas podrán hacer lo mismo que tú, salvo eliminar la clase.</p>
+                            <button type="button" class="btn btn-secondary btn-light"
+                                data-mdb-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary btn-light">Invitar</button>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="card-body text-dark d-flex pb-0 align-items-center">
             <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini-teachers">
@@ -77,18 +80,18 @@
 
         <!------------ Esta es la parte de Alumnos------->
         <div class="card-body border-success border-bottom d-flex flex-row">
-            <h3>Alumnos</h2>
+            <h3>Alumnos</h3>
 
-                <div class="newStudents d-flex ms-auto align-items-center">
-                    <p class="my-0 pe-3">1 alumno</p>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary ms-auto btn-light btn-lg btn-floating"
-                        data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
-                        <i class="fas fa-user-plus"></i>
-                    </button>
+            <div class="newStudents d-flex ms-auto align-items-center">
+                <p class="my-0 pe-3">1 alumno</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary ms-auto btn-light btn-floating shadow-none"
+                    data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+                    <i class="material-icons">person_add</i>
+                </button>
 
-                    <!------------ Modal para invitar nuevos estudiantes------->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <!------------ Modal para invitar nuevos estudiantes------->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -101,16 +104,17 @@
                                 <div class="form-outline">
                                     <input type="email" id="typeEmail" class="form-control" />
                                     <label class="form-label" for="typeEmail">Escribe un nombre o un correo</label>
-                                  </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary btn-light" data-mdb-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-secondary btn-light"
+                                    data-mdb-dismiss="modal">Cancelar</button>
                                 <button type="button" class="btn btn-primary btn-light">Invitar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
         </div>
         <!------------ Botón de acciones para ver que hacer con alumnos------->
@@ -127,9 +131,9 @@
             </ul>
 
             <div class="ms-auto">
-                <button type="button" class="btn btn-light ms-auto btn-lg btn-floating" data-mdb-toggle="dropdown"
+                <button type="button" class="btn btn-light btn-sm  shadow-none" data-mdb-toggle="dropdown"
                     aria-expanded="false">
-                    <i class="fas fa-user-graduate"></i>
+                    <i class="material-icons">sort_by_alpha</i>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Ordenar por apellido</a></li>
@@ -145,9 +149,9 @@
                 <h6 class="my-0 pe-3">Matias Mazrimas</h6>
             </div>
             <div class="ms-auto">
-                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                <button type="button" class="dropdown-toggle-disabled btn btn-light btn-sm  shadow-none"
                     data-mdb-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropdown</span>
+                    <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Enviar un correo a un alumno</a></li>
@@ -182,10 +186,10 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            <button type="button" class="btn btn-secondary btn-light" data-mdb-dismiss="modal">
                                 Close
                             </button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary btn-light ">Save changes</button>
                         </div>
                     </div>
                 </div>
@@ -195,7 +199,8 @@
 
 
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
 </body>
 
 </html>
