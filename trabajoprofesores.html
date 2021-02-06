@@ -53,7 +53,8 @@
               Crear
             </button>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><a class="dropdown-item" href="#"> <i class="far fa-file-alt me-2 iconHomework"></i>Tarea</a>
+              <li> <a class="dropdown-item" href="#"  class="btn btn-primary btn-light btn-rounded" data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal4"> <i class="far fa-file-alt me-2 iconHomework"></i>Tarea</a>
               </li>
               <li><a class="dropdown-item" href="#"> <i class="far fa-file-alt me-2 iconHomework"></i>Tarea de
                   Cuestionario</a></li>
@@ -68,6 +69,163 @@
               </div>
             </ul>
           </div>
+
+          <!-------------Acá termina el botón de Crear con sus opciones -------------------->
+
+           <!------------------------------- Modal de Tarea ----------------------------------------------->
+      <div class="modal top fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+      <div class="modal-dialog modal-fullscreen ">
+        <div class="modal-content">
+          <div class="modal-header">
+              <div class="homework d-flex flex-row">
+                  <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title ms-3" id="exampleModalLabel">Tarea</h5>
+              </div>
+              <div class="header-modal d-flex ms-auto">
+              <div class="btn-group">
+                  <button type="button" class="btn btn-light">Crear Tarea</button>
+                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                  data-mdb-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Crear Tarea</a></li>
+                  <li><a class="dropdown-item" href="#">Programar</a></li>
+                  <li><a class="dropdown-item" href="#">Guardar Borrador</a></li>
+
+                  <div class="card-footer">
+                      <li><a class="dropdown-item" href="#">Descartar Borrador</a></li>
+                  </div>
+                </ul>
+            </div>
+            </div>
+
+          </div>
+          <div class="modal-body">
+            <!-----------------Titulo en el modal------------->
+              <!-----------------Titulo/Instrucciones------------->
+              <div class="main row">
+              <article class="col-md-1 d-flex flex-column">
+              <i class="large material-icons mb-3">iassignment</i>
+              <i class="large material-icons ms-4">format_align_left</i>
+              </article>
+
+              <aside class="col-md-7">
+              <div class="form-outline mb-4">
+                  <input type="text" id="typeText" class="form-control" />
+                  <label class="form-label" for="typeText">Titulo</label>
+                </div>
+              <div class="form-outline mb-4">
+                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                  <label class="form-label" for="textAreaExample">Instrucciones (opcional)</label>
+                </div>
+
+                  <!-----------------Boton de agregar------------>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-mdb-toggle="dropdown"
+                    aria-expanded="false"> <i class="fas fa-paperclip"></i>
+                    Agregar
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a class="dropdown-item" href="#"> <i class="fab fa-google-drive btn-0 me-2"></i>Google Drive</a></li>
+                    <li><a class="dropdown-item" href="#"> <i class="fas fa-paperclip btn-0 me-2"></i>Enlace</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="far fa-file-archive btn-0 me-2"></i>Archivo</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fab fa-youtube btn-0 me-2"></i>Youtube</a></li>
+                  </ul>
+                </div>
+
+                <!-----------------Boton de crear------------->
+              <div class="btn-group" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-mdb-toggle="dropdown"
+                        aria-expanded="false"> <i class="fas fa-plus"></i>
+                        Crear
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <li><a class="dropdown-item" href="#"> <i class="fas fa-align-left btn-0 me-2"></i>Documentos</a></li>
+                        <li><a class="dropdown-item" href="#"> <i class="fas fa-folder-minus btn-0 me-2"></i>Presentaciones</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-chart-bar btn-0 me-2"></i>Hojas de calculo</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-shapes btn-0 me-2"></i>Dibujos</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-align-justify btn-0 me-2"></i>Formularios</a></li>
+                      </ul>
+              </div>
+              </aside>
+
+          <div class="col-md-4 border-start">
+              <h6>Para:</h6>
+              <div class="select-group d-flex flex-row">
+                  <select class="form-select" aria-label="Disabled select example" disabled>
+                      <option selected>Primer tema</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+              
+              <div class="btn-group d-flex justify-content-between shadow-none ms-4">
+                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-mdb-toggle="dropdown"
+                    aria-expanded="false"> Agregar a
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu ms-3">
+                      <div class="card-body text-dark d-flex  align-items-center">
+                          <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                          <button type="button" class="btn btn-primary btn-floating btn-light btn-lg">
+                              <i class="fas fa-users iconHomework"></i>
+                            </button>
+                            <a href="#" class="card-link">Todos los alumnos</a>
+                      </div>
+                      <div class="card-body text-dark d-flex  align-items-center">
+                          <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                      <img src="https://i.imgur.com/ladIWFJ.png" alt="" class="profile-mini-teachers">
+                      <div class="userWithDateComent d-flex flex-column">
+                          <h6 class="my-0 pe-3">Matias Mazrimas</h6>
+                      </div>
+                  </ul>
+                </div>
+              </div>
+              <h6 class="mt-3">Puntos:</h6>
+              <input type="text" list="quantities" min="1" max="100" step="12" placeholder="100 puntos">
+                  <datalist id="quantities">
+                    <option value="Sin calificar">
+                  </datalist>
+              <h6 class="mt-3">Fecha de entrega:</h6>
+              <div class="form-group row">
+                <div class="col-10">
+                  <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                </div>
+              </div>
+              <h6 class="mt-3">Tema:</h6>
+              <div class="select-group d-flex flex-row">
+                <select class="form-select" aria-label="select example">
+                    <option selected>Sin tema</option>
+                    <option value="1">Crear tema</option>
+                    <option value="2">Primer tema</option>
+                    <option value="3">Segundo tema</option>
+                </select>
+              </div>
+
+              <div class="card-body d-flex align-items-center">
+                <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                    <h6 class="my-0 pe-1">Los alumnos pueden responder a sus compañeros</h6>
+                    
+                </div>
+              <div class="card-body d-flex align-items-center">
+                <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                <h6 class="my-0 pe-1">Los alumnos pueden editar la respuesta</h6>
+              </div>
+                  
+          </div>
+          </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+   <!-----------Acá termina todo el modal de la tarea -------------------->
+
+
 
           <!-----------Acá se encuentra los links del calendario google/drivw -------------------->
           <button type="button" class="btn btn-link ms-auto" data-mdb-ripple-color="dark"><i
@@ -261,7 +419,7 @@
               </div>
             </div>
             <div class="card-body">
-              <p class="deliveryDate">Los alumnos solo pueden ver los temas sin publicaciones</p>
+              <p class="deliveryDate">Los alumnos solo pueden ver los temas con publicaciones</p>
             </div>
         </div>
 
